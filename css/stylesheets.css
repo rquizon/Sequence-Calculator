@@ -87,7 +87,7 @@ td {
 
 
 footer {
-    background-color: #3a3a3a;
+    background-color: #333;
     color: white;
     padding: 1em;
     text-align: center;
@@ -95,29 +95,29 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 10%;
 }
 
 footer a {
-    color: white;
+    color: #f89501; /* Highlight link color */
     text-decoration: none;
+    transition: color 0.3s ease; /* Add smooth transition for color change */
 }
 
 footer a:hover {
-    color: #dfdfdf;
+    color: #FF9900; /* Change link color on hover */
 }
 
 .footer-section {
     margin-bottom: 20px;
     flex: 1;
     max-width: 200px;
-    text-align: left;
+    text-align: center; /* Center text in each section */
     padding: 0 10px;
-    margin-left: 60px;
 }
 
 .footer-section h6 {
     font-size: 1.2em;
+    margin-bottom: 10px; /* Add some space below the heading */
 }
 
 .footer-columns {
