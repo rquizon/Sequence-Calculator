@@ -126,6 +126,7 @@ footer a:hover {
     justify-content: space-around;
 }
 
+
 @media (max-width: 600px) {
     main {
         margin: 20px 15px 0px 15px;
@@ -133,5 +134,9 @@ footer a:hover {
     select {
         background-color: #f89501; /* Updated background color for smaller screens */
         color: white; /* Updated text color for smaller screens */
+    }
+
+    footer {
+        margin-top: 30%;
     }
 }
