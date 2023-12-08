@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #142433;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #f09000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 89px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #f89501;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF9900;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+    max-height: 400px; /* Set a maximum height for the table */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowing content */
+}
+
+/* Additional styles for the content container */
+#contentContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    z-index: 1000;
+    display: none;
+}
+
+/* Styling for truncated cells */
+.truncated {
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+footer {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dfdfdf;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    flex: 1;
+    max-width: 200px;
+    text-align: left;
+    padding: 0 10px;
+    margin-left: 60px;
+}
+
+.footer-section h6 {
+    font-size: 1.2em;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 20px 15px 0px 15px;
+    }
+    select {
+        background-color: #f89501; /* Updated background color for smaller screens */
+        color: white; /* Updated text color for smaller screens */
+    }
+}

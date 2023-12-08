@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Sequence Calculator</title>
+    <link rel="stylesheet" href="css/stylesheets.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Math Sequence Calculator</h1>
+    </header>
+
+    <main>
+        <label for="sequenceType">Select Sequence Type:</label>
+        <select id="sequenceType">
+            <option value="1">Fibonacci Sequence</option>
+            <option value="2">Lucas Sequence</option>
+            <option value="3">Tribonacci Sequence</option>
+            <option value="4">Collatz Sequence</option>
+        </select>
+
+        <label for="termNum">Enter Term:</label>
+        <input type="number" id="termNum" placeholder="Enter term">
+
+        <button onclick="solveSequence()">Solve</button>
+
+        <table id="resultTable">
+            <!-- Result will be displayed here -->
+        </table>
+        <div id="contentContainer"></div>
+        <div id="termsListContainer"></div>
+    </main>
+
+    <footer class="py-5">
+        <div class="footer-columns">
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h6 style="color: #ffc107;">Programmer</h6>
+                <p class="mb-0">Rolly S. Quizon</p>
+                <p class="mb-0">Andrei Sanapo</p>
+            </div>
+
+            <!-- Keywords -->
+            <div class="footer-section">
+                <h6 style="color: #ffc107;">Keywords</h6>
+                <p class="mb-0">Math sequence</p>
+                <p class="mb-0">Math Assistance</p>
+                <p class="mb-0">Sequence calculator</p>
+            </div>
+
+            <!-- Services Offered -->
+            <div class="footer-section">
+                <h6 style="color: #ffc107;">Services Offered</h6>
+                <p class="mb-0">Math Assistance</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/js.js"></script>
+
+</body>
+
+</html>
